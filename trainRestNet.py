@@ -105,14 +105,14 @@ def DownloadFile(url, local_filename):
 
 from sklearn.model_selection import train_test_split
 
-newMeta = open('meta.txt','w')
-for file in glob.glob('imgs/women/*.jpg'):
-    newMeta.write('{},{}\n'.format(file, 0))
-for file in glob.glob('imgs/men/*.jpg'):
-    newMeta.write('{},{}\n'.format(file, 1))
-for file in glob.glob('imgs/baby/*.jpg'):
-    newMeta.write('{},{}\n'.format(file, 2))
-newMeta.close()
+#newMeta = open('meta.txt','w')
+#for file in glob.glob('imgs/women/*.jpg'):
+#    newMeta.write('{},{}\n'.format(file, 0))
+#for file in glob.glob('imgs/men/*.jpg'):
+#    newMeta.write('{},{}\n'.format(file, 1))
+#for file in glob.glob('imgs/baby/*.jpg'):
+#    newMeta.write('{},{}\n'.format(file, 2))
+#newMeta.close()
 
 newMeta = open('meta.txt', "rt")
 X = []
